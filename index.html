@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FitPulse — A next-generation AI-powered fitness tracker. Track workouts, nutrition, sleep, and reach your health goals with a premium dashboard experience." />
+  <title>FitPulse — Next-Gen Fitness Tracker</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== MOUSE SPOTLIGHT ===================== -->
+  <div id="mouse-spotlight" class="mouse-spotlight"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">◆</span>
+        <span class="logo-text">Fit<span class="accent">Pulse</span></span>
+      </a>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#features" class="nav-link" data-section="features">Features</a></li>
+        <li><a href="#dashboard" class="nav-link" data-section="dashboard">Dashboard</a></li>
+        <li><a href="#workouts" class="nav-link" data-section="workouts">Workouts</a></li>
+        <li><a href="#nutrition" class="nav-link" data-section="nutrition">Nutrition</a></li>
+        <li><a href="#bmi" class="nav-link" data-section="bmi">BMI</a></li>
+        <li><a href="#progress" class="nav-link" data-section="progress">Progress</a></li>
+        <li><a href="#testimonials" class="nav-link" data-section="testimonials">Stories</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO / HOME ===================== -->
+  <section id="home" class="section hero-section">
+    <div class="hero-bg-particles" id="hero-particles"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content reveal">
+      <p class="hero-tag">⚡ Next-Generation Fitness Platform</p>
+      <h1 class="hero-title">
+        <span class="hero-line">Transform Your</span>
+        <span class="hero-line accent-gradient">Body & Mind</span>
+      </h1>
+      <p class="hero-subtitle">Track workouts, monitor nutrition, crush goals — all in one premium AI-powered dashboard. Your journey to peak fitness starts now.</p>
+      <div class="hero-buttons">
+        <a href="#dashboard" class="btn btn-primary glow-btn">
+          <span>Start Tracking</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#workouts" class="btn btn-outline">View Plans</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number counter" data-target="15420">0</span>
+          <span class="hero-stat-label">Calories Burned</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number counter" data-target="2480">0</span>
+          <span class="hero-stat-label">Workout Hours</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number counter" data-target="87500">0</span>
+          <span class="hero-stat-label">Daily Steps</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number counter" data-target="12800">0</span>
+          <span class="hero-stat-label">Active Members</span>
+        </div>
+      </div>
+    </div>
+    <!-- Floating 3D Cards -->
+    <div class="hero-floating-cards">
+      <div class="float-card float-card-1">
+        <div class="float-card-icon">🔥</div>
+        <div class="float-card-value">1,240</div>
+        <div class="float-card-label">Calories</div>
+      </div>
+      <div class="float-card float-card-2">
+        <div class="float-card-icon">🏃</div>
+        <div class="float-card-value">8,542</div>
+        <div class="float-card-label">Steps</div>
+      </div>
+      <div class="float-card float-card-3">
+        <div class="float-card-icon">💧</div>
+        <div class="float-card-value">2.4L</div>
+        <div class="float-card-label">Water</div>
+      </div>
+      <div class="float-card float-card-4">
+        <div class="float-card-icon">❤️</div>
+        <div class="float-card-value">72</div>
+        <div class="float-card-label">BPM</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">About Us</p>
+        <h2 class="section-title">Why <span class="accent">FitPulse</span>?</h2>
+        <p class="section-subtitle">We built FitPulse to be the most intelligent, beautiful, and motivating fitness companion you've ever used.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal tilt-card" data-delay="0">
+          <div class="about-card-icon">📊</div>
+          <h3>Smart Tracking</h3>
+          <p>AI-powered activity tracking that learns your patterns and adapts to your lifestyle for maximum results.</p>
+        </div>
+        <div class="about-card reveal tilt-card" data-delay="100">
+          <div class="about-card-icon">🎯</div>
+          <h3>Goal Setting</h3>
+          <p>Set personalized goals and watch your progress unfold with beautiful visualizations and motivating milestones.</p>
+        </div>
+        <div class="about-card reveal tilt-card" data-delay="200">
+          <div class="about-card-icon">🧠</div>
+          <h3>Build Habits</h3>
+          <p>Form lasting healthy habits with daily streaks, reminders, and a reward system designed by behavioral scientists.</p>
+        </div>
+        <div class="about-card reveal tilt-card" data-delay="300">
+          <div class="about-card-icon">💪</div>
+          <h3>Stay Motivated</h3>
+          <p>Community challenges, personal bests, and visual achievements keep you pushing forward every single day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section id="features" class="section features-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Features</p>
+        <h2 class="section-title">Everything You <span class="accent">Need</span></h2>
+        <p class="section-subtitle">From step counting to sleep analysis — a complete fitness ecosystem in your browser.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal tilt-card" data-delay="0">
+          <div class="feature-icon">👣</div>
+          <h3>Step Tracking</h3>
+          <p>Real-time step counter with daily, weekly, and monthly breakdowns.</p>
+        </div>
+        <div class="feature-card reveal tilt-card" data-delay="50">
+          <div class="feature-icon">🔥</div>
+          <h3>Calorie Tracking</h3>
+          <p>Automatic calorie burn estimation based on your activity and BMR.</p>
+        </div>
+        <div class="feature-card reveal tilt-card" data-delay="100">
+          <div class="feature-icon">💧</div>
+          <h3>Water Intake</h3>
+          <p>Stay hydrated with smart reminders and beautiful consumption visuals.</p>
+        </div>
+        <div class="feature-card reveal tilt-card" data-delay="150">
+          <div class="feature-icon">⚖️</div>
+          <h3>BMI Calculator</h3>
+          <p>Instant BMI calculation with health category breakdown and advice.</p>
+        </div>
+        <div class="feature-card reveal tilt-card" data-delay="200">
+          <div class="feature-icon">🏋️</div>
+          <h3>Workout Planner</h3>
+          <p>Curated plans for weight loss, muscle gain, yoga, and home workouts.</p>
+        </div>
+        <div class="feature-card reveal tilt-card" data-delay="250">
+          <div class="feature-icon">📈</div>
+          <h3>Progress Charts</h3>
+          <p>Beautiful animated charts that visualize your fitness journey over time.</p>
+        </div>
+        <div class="feature-card reveal tilt-card" data-delay="300">
+          <div class="feature-icon">🎯</div>
+          <h3>Goal Setting</h3>
+          <p>Set, track, and celebrate your personalized fitness milestones.</p>
+        </div>
+        <div class="feature-card reveal tilt-card" data-delay="350">
+          <div class="feature-icon">🔥</div>
+          <h3>Daily Streaks</h3>
+          <p>Build consistency with streak tracking and motivational rewards.</p>
+        </div>
+        <div class="feature-card reveal tilt-card" data-delay="400">
+          <div class="feature-icon">😴</div>
+          <h3>Sleep Tracker</h3>
+          <p>Monitor sleep quality, duration, and patterns for optimal recovery.</p>
+        </div>
+        <div class="feature-card reveal tilt-card" data-delay="450">
+          <div class="feature-icon">❤️</div>
+          <h3>Heart Health</h3>
+          <p>Activity-based heart rate zones and cardiovascular fitness scoring.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DASHBOARD ===================== -->
+  <section id="dashboard" class="section dashboard-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Dashboard</p>
+        <h2 class="section-title">Your Fitness <span class="accent">Command Center</span></h2>
+        <p class="section-subtitle">Track every metric that matters in one beautiful, interactive dashboard.</p>
+      </div>
+
+      <!-- Profile Card -->
+      <div class="dash-grid">
+        <div class="dash-card dash-profile reveal">
+          <div class="dash-profile-avatar">
+            <div class="avatar-ring">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="54" class="avatar-ring-bg"/>
+                <circle cx="60" cy="60" r="54" class="avatar-ring-progress" style="--progress: 78"/>
+              </svg>
+              <span class="avatar-emoji">🏋️</span>
+            </div>
+          </div>
+          <h3 class="dash-profile-name">Alex Johnson</h3>
+          <p class="dash-profile-level">Level 12 • Pro Athlete</p>
+          <div class="dash-profile-stats">
+            <div><span class="dash-mini-val">78%</span><span class="dash-mini-label">Goal</span></div>
+            <div><span class="dash-mini-val">14</span><span class="dash-mini-label">Streak</span></div>
+            <div><span class="dash-mini-val">4.8</span><span class="dash-mini-label">Rating</span></div>
+          </div>
+        </div>
+
+        <!-- Steps Card -->
+        <div class="dash-card reveal" data-delay="50">
+          <div class="dash-card-header">
+            <span class="dash-card-icon">👣</span>
+            <h4>Daily Steps</h4>
+          </div>
+          <div class="dash-big-number"><span id="dash-steps" class="counter" data-target="8542">0</span></div>
+          <div class="dash-progress-bar">
+            <div class="dash-progress-fill" data-width="85" style="--bar-color: var(--accent)"></div>
+          </div>
+          <p class="dash-card-sub">Goal: 10,000 steps</p>
+        </div>
+
+        <!-- Calories Card -->
+        <div class="dash-card reveal" data-delay="100">
+          <div class="dash-card-header">
+            <span class="dash-card-icon">🔥</span>
+            <h4>Calories Burned</h4>
+          </div>
+          <div class="dash-big-number"><span id="dash-calories" class="counter" data-target="1240">0</span></div>
+          <div class="dash-progress-bar">
+            <div class="dash-progress-fill" data-width="62" style="--bar-color: #ff6b35"></div>
+          </div>
+          <p class="dash-card-sub">Goal: 2,000 kcal</p>
+        </div>
+
+        <!-- Water Intake Card -->
+        <div class="dash-card dash-water-card reveal" data-delay="150">
+          <div class="dash-card-header">
+            <span class="dash-card-icon">💧</span>
+            <h4>Water Intake</h4>
+          </div>
+          <div class="water-tracker">
+            <div class="water-glasses">
+              <button class="water-glass filled" data-glass="1" aria-label="Glass 1">💧</button>
+              <button class="water-glass filled" data-glass="2" aria-label="Glass 2">💧</button>
+              <button class="water-glass filled" data-glass="3" aria-label="Glass 3">💧</button>
+              <button class="water-glass filled" data-glass="4" aria-label="Glass 4">💧</button>
+              <button class="water-glass filled" data-glass="5" aria-label="Glass 5">💧</button>
+              <button class="water-glass" data-glass="6" aria-label="Glass 6">💧</button>
+              <button class="water-glass" data-glass="7" aria-label="Glass 7">💧</button>
+              <button class="water-glass" data-glass="8" aria-label="Glass 8">💧</button>
+            </div>
+            <p class="water-status"><span id="water-count">5</span> / 8 glasses</p>
+          </div>
+        </div>
+
+        <!-- BMI Card -->
+        <div class="dash-card reveal" data-delay="200">
+          <div class="dash-card-header">
+            <span class="dash-card-icon">⚖️</span>
+            <h4>BMI Status</h4>
+          </div>
+          <div class="dash-bmi-ring">
+            <svg viewBox="0 0 120 120" class="circular-progress" data-value="22.4" data-max="40">
+              <circle cx="60" cy="60" r="54" class="cp-bg"/>
+              <circle cx="60" cy="60" r="54" class="cp-fill" style="--progress: 56"/>
+            </svg>
+            <div class="cp-center">
+              <span class="cp-value">22.4</span>
+              <span class="cp-label">Normal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workout Summary Card -->
+        <div class="dash-card reveal" data-delay="250">
+          <div class="dash-card-header">
+            <span class="dash-card-icon">🏋️</span>
+            <h4>Workout Summary</h4>
+          </div>
+          <div class="workout-summary-list">
+            <div class="workout-item">
+              <span class="wi-name">Morning Run</span>
+              <span class="wi-badge done">✓ Done</span>
+            </div>
+            <div class="workout-item">
+              <span class="wi-name">Upper Body</span>
+              <span class="wi-badge done">✓ Done</span>
+            </div>
+            <div class="workout-item">
+              <span class="wi-name">Evening Yoga</span>
+              <span class="wi-badge pending">Pending</span>
+            </div>
+          </div>
+          <button id="complete-workout-btn" class="btn btn-sm btn-primary glow-btn" style="margin-top:12px;width:100%">Complete Next</button>
+        </div>
+
+        <!-- Goals Card -->
+        <div class="dash-card reveal" data-delay="300">
+          <div class="dash-card-header">
+            <span class="dash-card-icon">🎯</span>
+            <h4>Goal Progress</h4>
+          </div>
+          <div class="goal-bars">
+            <div class="goal-item">
+              <div class="goal-info"><span>Weight Loss</span><span>72%</span></div>
+              <div class="dash-progress-bar"><div class="dash-progress-fill" data-width="72" style="--bar-color: #00e5a0"></div></div>
+            </div>
+            <div class="goal-item">
+              <div class="goal-info"><span>Muscle Gain</span><span>58%</span></div>
+              <div class="dash-progress-bar"><div class="dash-progress-fill" data-width="58" style="--bar-color: #7c4dff"></div></div>
+            </div>
+            <div class="goal-item">
+              <div class="goal-info"><span>Flexibility</span><span>45%</span></div>
+              <div class="dash-progress-bar"><div class="dash-progress-fill" data-width="45" style="--bar-color: #00b0ff"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity Chart Card -->
+        <div class="dash-card dash-chart-card reveal" data-delay="350">
+          <div class="dash-card-header">
+            <span class="dash-card-icon">📈</span>
+            <h4>Weekly Activity</h4>
+          </div>
+          <div class="bar-chart" id="weekly-chart">
+            <div class="bar-col"><div class="bar" data-height="65" style="--bar-color: var(--accent)"></div><span>Mon</span></div>
+            <div class="bar-col"><div class="bar" data-height="80" style="--bar-color: var(--accent)"></div><span>Tue</span></div>
+            <div class="bar-col"><div class="bar" data-height="45" style="--bar-color: var(--accent)"></div><span>Wed</span></div>
+            <div class="bar-col"><div class="bar" data-height="90" style="--bar-color: var(--accent)"></div><span>Thu</span></div>
+            <div class="bar-col"><div class="bar" data-height="70" style="--bar-color: var(--accent)"></div><span>Fri</span></div>
+            <div class="bar-col"><div class="bar" data-height="55" style="--bar-color: var(--accent)"></div><span>Sat</span></div>
+            <div class="bar-col"><div class="bar" data-height="85" style="--bar-color: var(--accent)"></div><span>Sun</span></div>
+          </div>
+        </div>
+
+        <!-- Weekly Progress Mini-Cards -->
+        <div class="dash-card dash-weekly reveal" data-delay="400">
+          <div class="dash-card-header">
+            <span class="dash-card-icon">📅</span>
+            <h4>This Week</h4>
+          </div>
+          <div class="weekly-dots">
+            <div class="week-day active"><span>M</span><div class="dot-ring"></div></div>
+            <div class="week-day active"><span>T</span><div class="dot-ring"></div></div>
+            <div class="week-day active"><span>W</span><div class="dot-ring"></div></div>
+            <div class="week-day active"><span>T</span><div class="dot-ring"></div></div>
+            <div class="week-day today"><span>F</span><div class="dot-ring"></div></div>
+            <div class="week-day"><span>S</span><div class="dot-ring"></div></div>
+            <div class="week-day"><span>S</span><div class="dot-ring"></div></div>
+          </div>
+          <p class="streak-text">🔥 5-day streak! Keep it up!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WORKOUT PLANS ===================== -->
+  <section id="workouts" class="section workouts-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Workout Plans</p>
+        <h2 class="section-title">Train <span class="accent">Smarter</span></h2>
+        <p class="section-subtitle">Expert-crafted programs for every fitness level and goal.</p>
+      </div>
+      <div class="workout-plans-grid">
+        <div class="plan-card reveal tilt-card" data-delay="0">
+          <div class="plan-badge">Popular</div>
+          <div class="plan-icon">🏃</div>
+          <h3>Weight Loss</h3>
+          <p>High-intensity interval training combined with targeted cardio for maximum fat burn.</p>
+          <div class="plan-meta">
+            <span>⏱ 8 Weeks</span>
+            <span>📊 Intermediate</span>
+            <span>🔥 600 cal/session</span>
+          </div>
+          <button class="btn btn-primary glow-btn plan-btn">Start Plan</button>
+        </div>
+        <div class="plan-card reveal tilt-card" data-delay="100">
+          <div class="plan-badge pro">Pro</div>
+          <div class="plan-icon">💪</div>
+          <h3>Muscle Gain</h3>
+          <p>Progressive overload strength training with hypertrophy-focused splits.</p>
+          <div class="plan-meta">
+            <span>⏱ 12 Weeks</span>
+            <span>📊 Advanced</span>
+            <span>🔥 450 cal/session</span>
+          </div>
+          <button class="btn btn-primary glow-btn plan-btn">Start Plan</button>
+        </div>
+        <div class="plan-card reveal tilt-card" data-delay="200">
+          <div class="plan-icon">🏠</div>
+          <h3>Home Workout</h3>
+          <p>No equipment needed. Full-body routines you can do anywhere, anytime.</p>
+          <div class="plan-meta">
+            <span>⏱ 6 Weeks</span>
+            <span>📊 Beginner</span>
+            <span>🔥 350 cal/session</span>
+          </div>
+          <button class="btn btn-primary glow-btn plan-btn">Start Plan</button>
+        </div>
+        <div class="plan-card reveal tilt-card" data-delay="300">
+          <div class="plan-icon">🧘</div>
+          <h3>Yoga & Flexibility</h3>
+          <p>Restore balance with mindful movement, deep stretching, and breathing exercises.</p>
+          <div class="plan-meta">
+            <span>⏱ 4 Weeks</span>
+            <span>📊 All Levels</span>
+            <span>🔥 200 cal/session</span>
+          </div>
+          <button class="btn btn-primary glow-btn plan-btn">Start Plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NUTRITION ===================== -->
+  <section id="nutrition" class="section nutrition-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Nutrition</p>
+        <h2 class="section-title">Fuel Your <span class="accent">Performance</span></h2>
+        <p class="section-subtitle">Optimal nutrition planning to complement your training and accelerate results.</p>
+      </div>
+
+      <div class="nutrition-grid">
+        <!-- Macro Breakdown -->
+        <div class="nutri-card nutri-macros reveal tilt-card">
+          <h3>Daily Macronutrients</h3>
+          <div class="macro-rings">
+            <div class="macro-ring">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" class="macro-bg"/>
+                <circle cx="50" cy="50" r="42" class="macro-fill" style="--progress: 65; --color: #00e5a0"/>
+              </svg>
+              <div class="macro-center"><span>65%</span></div>
+              <p class="macro-label">Protein</p>
+            </div>
+            <div class="macro-ring">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" class="macro-bg"/>
+                <circle cx="50" cy="50" r="42" class="macro-fill" style="--progress: 48; --color: #7c4dff"/>
+              </svg>
+              <div class="macro-center"><span>48%</span></div>
+              <p class="macro-label">Carbs</p>
+            </div>
+            <div class="macro-ring">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" class="macro-bg"/>
+                <circle cx="50" cy="50" r="42" class="macro-fill" style="--progress: 32; --color: #ff6b35"/>
+              </svg>
+              <div class="macro-center"><span>32%</span></div>
+              <p class="macro-label">Fats</p>
+            </div>
+          </div>
+          <div class="calorie-suggest">
+            <p>Daily Target: <strong>2,200 kcal</strong></p>
+            <div class="dash-progress-bar" style="margin-top:8px">
+              <div class="dash-progress-fill" data-width="68" style="--bar-color: var(--accent)"></div>
+            </div>
+            <p class="dash-card-sub">1,496 / 2,200 consumed</p>
+          </div>
+        </div>
+
+        <!-- Meal Cards -->
+        <div class="nutri-card reveal tilt-card" data-delay="100">
+          <div class="meal-emoji">🥗</div>
+          <h3>Power Salad Bowl</h3>
+          <p>Grilled chicken, quinoa, avocado, mixed greens & lemon vinaigrette</p>
+          <div class="meal-macros">
+            <span class="mm protein">P: 42g</span>
+            <span class="mm carbs">C: 38g</span>
+            <span class="mm fats">F: 18g</span>
+          </div>
+          <p class="meal-cal">480 kcal</p>
+        </div>
+        <div class="nutri-card reveal tilt-card" data-delay="200">
+          <div class="meal-emoji">🥩</div>
+          <h3>Lean Steak Plate</h3>
+          <p>Grass-fed sirloin, sweet potato, steamed broccoli & garlic butter</p>
+          <div class="meal-macros">
+            <span class="mm protein">P: 52g</span>
+            <span class="mm carbs">C: 45g</span>
+            <span class="mm fats">F: 22g</span>
+          </div>
+          <p class="meal-cal">580 kcal</p>
+        </div>
+        <div class="nutri-card reveal tilt-card" data-delay="300">
+          <div class="meal-emoji">🥤</div>
+          <h3>Recovery Smoothie</h3>
+          <p>Whey protein, banana, blueberries, almond milk & chia seeds</p>
+          <div class="meal-macros">
+            <span class="mm protein">P: 32g</span>
+            <span class="mm carbs">C: 48g</span>
+            <span class="mm fats">F: 8g</span>
+          </div>
+          <p class="meal-cal">380 kcal</p>
+        </div>
+
+        <!-- Water Reminder -->
+        <div class="nutri-card nutri-water reveal tilt-card" data-delay="400">
+          <div class="meal-emoji">💧</div>
+          <h3>Hydration Reminder</h3>
+          <p>Stay on track with your daily water intake goal.</p>
+          <div class="water-reminder-bar">
+            <div class="water-fill" id="nutrition-water-fill" style="width: 62.5%"></div>
+          </div>
+          <p class="water-reminder-text"><span id="nutrition-water-count">5</span> / 8 glasses today</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BMI CALCULATOR ===================== -->
+  <section id="bmi" class="section bmi-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">BMI Calculator</p>
+        <h2 class="section-title">Know Your <span class="accent">Numbers</span></h2>
+        <p class="section-subtitle">Calculate your Body Mass Index instantly and understand what it means for your health.</p>
+      </div>
+      <div class="bmi-container reveal">
+        <div class="bmi-form-card tilt-card">
+          <div class="bmi-input-group">
+            <label for="bmi-height">Height (cm)</label>
+            <input type="number" id="bmi-height" placeholder="e.g. 175" min="50" max="300" />
+          </div>
+          <div class="bmi-input-group">
+            <label for="bmi-weight">Weight (kg)</label>
+            <input type="number" id="bmi-weight" placeholder="e.g. 70" min="10" max="500" />
+          </div>
+          <button id="bmi-calc-btn" class="btn btn-primary glow-btn" style="width:100%">Calculate BMI</button>
+        </div>
+        <div id="bmi-result" class="bmi-result-card" style="display:none">
+          <div class="bmi-result-ring">
+            <svg viewBox="0 0 140 140" class="bmi-ring-svg">
+              <circle cx="70" cy="70" r="60" class="bmi-ring-bg"/>
+              <circle cx="70" cy="70" r="60" class="bmi-ring-fill" id="bmi-ring-fill"/>
+            </svg>
+            <div class="bmi-ring-center">
+              <span id="bmi-value" class="bmi-value">0</span>
+            </div>
+          </div>
+          <h3 id="bmi-category" class="bmi-category"></h3>
+          <p id="bmi-message" class="bmi-message"></p>
+          <div id="bmi-scale" class="bmi-scale">
+            <div class="bmi-scale-item underweight">
+              <span>Underweight</span><span>&lt; 18.5</span>
+            </div>
+            <div class="bmi-scale-item normal">
+              <span>Normal</span><span>18.5 – 24.9</span>
+            </div>
+            <div class="bmi-scale-item overweight">
+              <span>Overweight</span><span>25 – 29.9</span>
+            </div>
+            <div class="bmi-scale-item obese">
+              <span>Obese</span><span>≥ 30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROGRESS ===================== -->
+  <section id="progress" class="section progress-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Progress</p>
+        <h2 class="section-title">Your <span class="accent">Journey</span></h2>
+        <p class="section-subtitle">Visualize your transformation over time with beautiful analytics.</p>
+      </div>
+      <div class="progress-grid">
+        <!-- Weight Progress (Line Chart) -->
+        <div class="progress-card reveal tilt-card">
+          <h3>Weight Progress</h3>
+          <div class="line-chart" id="weight-chart">
+            <svg viewBox="0 0 400 200" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.3"/>
+                  <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path class="chart-area" d="M0,180 L57,150 L114,130 L171,110 L228,95 L285,80 L342,60 L400,45 L400,200 L0,200Z" fill="url(#lineGrad)"/>
+              <polyline class="chart-line" points="0,180 57,150 114,130 171,110 228,95 285,80 342,60 400,45" fill="none" stroke="var(--accent)" stroke-width="3"/>
+              <circle class="chart-dot" cx="0" cy="180" r="5"/>
+              <circle class="chart-dot" cx="57" cy="150" r="5"/>
+              <circle class="chart-dot" cx="114" cy="130" r="5"/>
+              <circle class="chart-dot" cx="171" cy="110" r="5"/>
+              <circle class="chart-dot" cx="228" cy="95" r="5"/>
+              <circle class="chart-dot" cx="285" cy="80" r="5"/>
+              <circle class="chart-dot" cx="342" cy="60" r="5"/>
+              <circle class="chart-dot" cx="400" cy="45" r="5"/>
+            </svg>
+            <div class="chart-labels">
+              <span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span><span>W8</span>
+            </div>
+          </div>
+          <p class="progress-note">⬇ 5.2 kg lost in 8 weeks</p>
+        </div>
+
+        <!-- Steps Progress (Bar Chart) -->
+        <div class="progress-card reveal tilt-card" data-delay="100">
+          <h3>Steps This Month</h3>
+          <div class="bar-chart" id="steps-chart">
+            <div class="bar-col"><div class="bar" data-height="50" style="--bar-color: #7c4dff"></div><span>W1</span></div>
+            <div class="bar-col"><div class="bar" data-height="70" style="--bar-color: #7c4dff"></div><span>W2</span></div>
+            <div class="bar-col"><div class="bar" data-height="60" style="--bar-color: #7c4dff"></div><span>W3</span></div>
+            <div class="bar-col"><div class="bar" data-height="90" style="--bar-color: #7c4dff"></div><span>W4</span></div>
+          </div>
+          <p class="progress-note">📈 Average 9,200 steps/day</p>
+        </div>
+
+        <!-- Workout Consistency -->
+        <div class="progress-card reveal tilt-card" data-delay="200">
+          <h3>Workout Consistency</h3>
+          <div class="consistency-grid" id="consistency-grid">
+            <!-- 28 day cells generated by JS -->
+          </div>
+          <p class="progress-note">🏆 22 / 28 days active this month</p>
+        </div>
+
+        <!-- Circular Progress Rings -->
+        <div class="progress-card progress-rings-card reveal tilt-card" data-delay="300">
+          <h3>Monthly Summary</h3>
+          <div class="progress-rings">
+            <div class="progress-ring-item">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" class="ring-bg"/>
+                <circle cx="50" cy="50" r="42" class="ring-fill" style="--progress: 82; --color: #00e5a0"/>
+              </svg>
+              <div class="ring-center"><span>82%</span></div>
+              <p>Steps</p>
+            </div>
+            <div class="progress-ring-item">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" class="ring-bg"/>
+                <circle cx="50" cy="50" r="42" class="ring-fill" style="--progress: 68; --color: #ff6b35"/>
+              </svg>
+              <div class="ring-center"><span>68%</span></div>
+              <p>Calories</p>
+            </div>
+            <div class="progress-ring-item">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" class="ring-bg"/>
+                <circle cx="50" cy="50" r="42" class="ring-fill" style="--progress: 90; --color: #7c4dff"/>
+              </svg>
+              <div class="ring-center"><span>90%</span></div>
+              <p>Workouts</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section id="testimonials" class="section testimonials-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Success Stories</p>
+        <h2 class="section-title">Real <span class="accent">Results</span></h2>
+        <p class="section-subtitle">Hear from our community members who transformed their lives with FitPulse.</p>
+      </div>
+      <div class="testimonial-slider" id="testimonial-slider">
+        <div class="testimonial-track" id="testimonial-track">
+          <div class="testimonial-card">
+            <div class="testimonial-avatar">👩‍💼</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"FitPulse completely changed my relationship with fitness. Down 15 kg in 4 months and feeling incredible. The dashboard keeps me accountable every single day."</p>
+            <h4>Sarah Mitchell</h4>
+            <span class="testimonial-role">Marketing Director</span>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-avatar">👨‍💻</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"As a developer, I sit all day. FitPulse's step reminders and workout plans got me moving. I've gained 6 kg of muscle and my energy levels are through the roof."</p>
+            <h4>James Chen</h4>
+            <span class="testimonial-role">Software Engineer</span>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-avatar">👩‍⚕️</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"I recommend FitPulse to my patients. The nutrition tracking and BMI calculator are medical-grade accurate. Beautiful interface that people actually enjoy using."</p>
+            <h4>Dr. Emily Rodriguez</h4>
+            <span class="testimonial-role">Sports Medicine Physician</span>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-avatar">🧑‍🎓</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The yoga and flexibility plan was exactly what I needed. My posture improved dramatically and the sleep tracker helped me establish a proper routine."</p>
+            <h4>Aiden Patel</h4>
+            <span class="testimonial-role">Graduate Student</span>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button id="slider-prev" class="slider-btn" aria-label="Previous testimonial">‹</button>
+          <div class="slider-dots" id="slider-dots"></div>
+          <button id="slider-next" class="slider-btn" aria-label="Next testimonial">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT & FOOTER ===================== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Get in Touch</p>
+        <h2 class="section-title">Contact <span class="accent">Us</span></h2>
+        <p class="section-subtitle">Have questions or feedback? We'd love to hear from you.</p>
+      </div>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form reveal tilt-card" novalidate>
+          <div class="form-group">
+            <label for="contact-name">Full Name</label>
+            <input type="text" id="contact-name" placeholder="John Doe" required />
+            <span class="form-error" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email Address</label>
+            <input type="email" id="contact-email" placeholder="john@example.com" required />
+            <span class="form-error" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" rows="5" placeholder="Your message..." required></textarea>
+            <span class="form-error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary glow-btn" style="width:100%">Send Message</button>
+          <p id="form-success" class="form-success" style="display:none">✅ Message sent successfully! We'll get back to you soon.</p>
+        </form>
+        <div class="contact-info reveal" data-delay="200">
+          <div class="contact-info-card">
+            <h3>Newsletter</h3>
+            <p>Get weekly fitness tips, recipes, and motivation delivered to your inbox.</p>
+            <div class="newsletter-form">
+              <input type="email" id="newsletter-email" placeholder="your@email.com" />
+              <button id="newsletter-btn" class="btn btn-primary glow-btn">Subscribe</button>
+            </div>
+            <p id="newsletter-success" class="form-success" style="display:none">🎉 Subscribed successfully!</p>
+          </div>
+          <div class="contact-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#" class="social-icon" aria-label="Twitter/X">𝕏</a>
+              <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+              <a href="#" class="social-icon" aria-label="YouTube">▶</a>
+              <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-icon">◆</span>
+          <span class="logo-text">Fit<span class="accent">Pulse</span></span>
+        </a>
+        <p>Your intelligent fitness companion. Track, train, and transform — all in one platform.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#workouts">Workout Plans</a></li>
+          <li><a href="#bmi">BMI Calculator</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#testimonials">Success Stories</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 FitPulse. All rights reserved. Built with 💚 for fitness enthusiasts.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
